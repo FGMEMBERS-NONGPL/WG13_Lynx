@@ -1,0 +1,40 @@
+<PropertyList>
+
+
+   
+	<path>tailrotor.ac</path>
+	
+	
+	 <animation>
+    <type>rotate</type>
+    <object-name>tailrotor</object-name>
+    <property>/rotors/tail/blade[0]/position-deg</property>
+    <center>
+       <x-m> 8.5</x-m>
+       <y-m>-0.5</y-m>
+       <z-m> 1.5 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>tailrotor</object-name>
+    <property>rotors/tail/rpm</property>
+	<factor>0.1085</factor>
+    <center>
+       <x-m> 8.5</x-m>
+       <y-m>-0.5</y-m>
+       <z-m> 1.5 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+</PropertyList>

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+
+<!--
+    Dedicated only to FlightGear
+    Property of Gerard Robin (C) 2010
+    License:  CREATIVE COMMON BY-NC-SA
+-->
+
+
+
+<PropertyList>
+
+    
+    <texture-path>Models/Textures</texture-path>
+
+    <animation>
+            <condition>
+            <equals>
+                <property>sim/current-view/view-number</property>
+                <value>999</value>
+            </equals>
+        </condition>
+        <type>select</type>
+        <object-name>Gabarit-Pose</object-name>
+    </animation>
+    
+    <!--================1================-->
+    
+    <!--<model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m></y-m>
+            <z-m></z-m>
+        </offsets>
+    </model>-->
+    
+    
+    <!-- <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel-Nord.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m></y-m>
+            <z-m></z-m>
+        </offsets>
+    </model>-->
+    
+    <!--<model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_tpt-S51.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m></y-m>
+            <z-m></z-m>
+        </offsets>
+    </model>-->
+    
+    <!--<model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel-f4u7.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m></y-m>
+            <z-m></z-m>
+        </offsets>
+    </model>-->
+   
+    
+    <!--================D3================-->
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m>0.655793</y-m>
+            <z-m>0.0349461</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Altitude-radio-Puma.xml</path>
+        <offsets>
+            <x-m></x-m>
+            <y-m>0.655793</y-m>
+            <z-m>0.0349461</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.655793</y-m>
+            <z-m>-0.057032</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/ALT-Nord.xml</path>
+        <offsets>
+            <x-m>-0.00908489</x-m>
+            <y-m>0.655793</y-m>
+            <z-m>-0.057032</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.655793</y-m>
+            <z-m>-0.149617</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/HI-Lynx.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.655793</y-m>
+            <z-m>-0.149617</z-m>
+        </offsets>
+    </model>
+    
+    
+    <!--================D2================-->
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.532477</y-m>
+            <z-m>0.053151</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/AI-Puma.xml</path>
+        <offsets>
+            <x-m>-0.0312029</x-m>
+            <y-m>0.532477</y-m>
+            <z-m>0.053151</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.532477</y-m>
+            <z-m>-0.0772662</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/GSDI-Lynx.xml</path>
+        <offsets>
+            <x-m>0.0</x-m>
+            <y-m>0.532477</y-m>
+            <z-m>-0.0772662</z-m>
+        </offsets>
+    </model>
+    
+    
+    <!--=================D1===============-->
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.408642</y-m>
+            <z-m>0.051891</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/ASI-Puma.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.408642</y-m>
+            <z-m>0.051891</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.408642</y-m>
+            <z-m>-0.0394542</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <name></name>
+        <path>Aircraft/WG13_Lynx/Instruments/Bezel_pt-Nord.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.408642</y-m>
+            <z-m>-0.132036</z-m>
+        </offsets>
+    </model>
+    
+    
+     <!-- light switch  -->
+  <model>
+    <path>Aircraft/WG13_Lynx/Models/divers/landing-lights.xml</path>
+    <offsets>
+       <x-m>0</x-m>
+            <y-m>0.35</y-m>
+            <z-m>-0.0</z-m>
+      <pitch-deg>-8</pitch-deg>
+    </offsets>
+  </model>
+    
+    <!--================4================-->
+   
+    
+   
+    <!--================5================-->
+    
+    
+    <!--================6================-->
+    
+    
+    
+    <!--================7================-->
+    
+    
+    
+    <!--================8================-->
+    
+    
+    <!--================9================-->
+    
+   
+    
+    <!--================10================-->
+    
+    
+    
+    
+    <!--================11================-->
+    
+    
+    
+    <!--================12================-->
+    
+    
+    
+
+</PropertyList>

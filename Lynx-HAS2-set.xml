@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Copyright License:  CREATIVE COMMON BY-NC-SA
+-->
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+    <note>
+        This model was created using publicly available data, publicly available
+        technical reports, textbooks, and guesses. It contains no proprietary or
+        restricted data. It has been validated only to the extent that it seems
+        to "fly right", and possibly to comply to published, publicly known,
+        performance data (maximum speed, endurance, etc.). Thus, this model
+        is meant for educational and entertainment purposes only.
+
+        This simulation model is not endorsed by the manufacturer.
+    </note>
+	<sim>
+		<description>WG13_Lynx_Helicopter</description>
+                <author>Was Gerard Robin, update grthteam,  https://sites.google.com/site/grtuxhangar/</author>
+		<status>"CREATIVE COMMON BY-NC-SA Copyright"</status>
+		<version>1.0 FGUK</version>
+		<flight-model>yasim</flight-model>
+		<aero>lynx</aero>
+		<startup>
+		<splash-texture>Aircraft/WG13_Lynx/lynx-splash.png</splash-texture>
+		</startup>
+		<fuel-fraction>0.8</fuel-fraction>
+		<sound>
+			<path>Aircraft/WG13_Lynx/Sounds/sound.xml</path>
+		</sound>
+
+
+
+
+            <hud>
+            <enable3d>false</enable3d>
+            <visibility archive="n">false</visibility>
+            </hud>
+
+            <instrumentation>
+                <path>Aircraft/WG13_Lynx/Instruments/instrumentation.xml</path>
+            </instrumentation>
+            <model>
+                <path archive="y">Aircraft/WG13_Lynx/Models/Lynx_HAS-Mk2.xml</path>
+               
+            </model>
+
+              <view n="0">
+                    <internal archive="y">true</internal>
+                    <config>
+                            <x-offset-m archive="y">0.455</x-offset-m><!--right-->
+                            <y-offset-m archive="y">0.45</y-offset-m><!--up-->
+                            <z-offset-m archive="y">-2.5</z-offset-m><!--back-->
+                            <pitch-offset-deg>-12</pitch-offset-deg>
+                            <default-field-of-view-deg type="double">73.0</default-field-of-view-deg>
+                    </config>
+            </view>
+			
+			
+		
+			 <view n="100">
+    <name>Pilot cam</name>
+        <internal archive="y">false</internal>
+        <config>
+		 <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+        
+                <x-offset-m type="double">0.0</x-offset-m><!--left-->
+				<y-offset-m type="double">0.45</y-offset-m><!--up-->
+				<z-offset-m type="double">-2.9</z-offset-m><!--back-->
+          <pitch-offset-deg>-8</pitch-offset-deg>
+		  <heading-offset-deg>199</heading-offset-deg>
+          <default-field-of-view-deg>110</default-field-of-view-deg>
+        </config>
+     
+  </view>
+  
+  
+  	<view n="101">
+			<name>Over the shoulder</name>
+			<internal archive="y">false</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<x-offset-m archive="y">0.52</x-offset-m><!--right-->
+				<y-offset-m archive="y">0.8</y-offset-m><!--up-->
+				<z-offset-m archive="y">-1.0</z-offset-m><!--back-->
+				<pitch-offset-deg>-14</pitch-offset-deg>
+				<heading-offset-deg>10</heading-offset-deg>
+				<default-field-of-view-deg>65</default-field-of-view-deg>
+			</config>
+		</view>
+
+  
+  
+            <chase-distance-m type="double">-20.0</chase-distance-m>
+            <weight n="0">
+                    <name>Pilot+copilot+passengers</name>
+                    <weight-lb>800</weight-lb>
+                    <max-lb>1000</max-lb>
+            </weight>
+
+            <help include="Help/Lynx-help.xml"/>
+			<menubar include="Dialogs/lynx-menu.xml"/>
+
+	</sim>
+	
+	 <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+	
+	<consumables>
+		<fuel>
+			<tank>
+				<name>Main</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+
+			<tank>
+				<name>Supply</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+		</fuel>
+	</consumables>
+
+
+	<controls>
+		<flight>
+			<aileron-trim>-0.00000</aileron-trim>
+			<rudder-trim>-0.0000</rudder-trim>
+			<wing-fold>0</wing-fold>
+		</flight>
+		<engines>
+			<engine n="0">
+				<magnetos>0</magnetos>
+				<rotorgear>0</rotorgear>
+				<master-bat>false</master-bat>
+			</engine>
+		</engines>
+		<gear>
+                    <brake-parking type="double">1.0</brake-parking>
+                    <wheel n="0"><heading>1</heading></wheel>
+                    <wheel n="1"><heading>1</heading></wheel>
+                    <wheel n="2"><heading>0</heading></wheel>
+		</gear>
+		<rotor>
+		<brake>1</brake>
+		<fold-pos>0</fold-pos>
+		<folded>0</folded>
+		</rotor>
+		<electric>
+		<master-switch>false</master-switch>
+		<battery-switch>false</battery-switch>
+		</electric>
+		<switches>
+		<landing-light>true</landing-light>
+		<master-avionics>false</master-avionics>
+		</switches>
+		<lighting>
+		<instruments-norm type="double">0.4</instruments-norm>
+		</lighting>
+	</controls>
+
+
+        <instrumentation>
+            <gsdi>
+                <serviceable type="bool">true</serviceable>
+                <enabled type="bool">true</enabled>
+            </gsdi>
+	</instrumentation>
+
+
+
+
+	<input include="Inputs/Lynx-input.xml"/>
+
+
+
+	<nasal>
+                
+		<lynx>
+			<file>Aircraft/WG13_Lynx/System/lynx.nas</file>
+			<file>Aircraft/WG13_Lynx/Nasal/liveries.nas</file>
+			
+		</lynx>
+      <init-electrical>
+                    <file>Aircraft/WG13_Lynx/System/init_electrical.nas</file>
+                </init-electrical> 
+
+	
+		<lights>
+      <file>Aircraft/WG13_Lynx/Nasal/Lights.nas</file>
+    </lights>				
+	</nasal>
+
+
+</PropertyList>

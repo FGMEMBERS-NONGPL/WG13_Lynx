@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Royal Navy, Ice Patrol (HMS Endurance)</name>
+        <index type="int">1</index>
+        <texture>Liveries/RNIcePatrol_HAS.jpg</texture>
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
